@@ -1,14 +1,19 @@
 import { useState } from "react";
 import ExpandIcon from "../Expand";
 import Image from "next/image";
+import ExpandedExcom from "./ExpandedExcom";
+
 export default function Excom() {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const handleExpandClick = () => {
         setIsExpanded(!isExpanded);
         console.log("Excom ExpandIcon clicked! Expanded:", !isExpanded);
-        // Add your custom logic here
     };
+
+    if (isExpanded) {
+        return <ExpandedExcom onBack={handleExpandClick} />;
+    }
 
     return (
         <div className="h-screen bg-black relative flex items-center justify-start w-full">

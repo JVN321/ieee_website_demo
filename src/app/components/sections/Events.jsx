@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ExpandIcon from "../Expand";
+import ExpandedEvents from "./ExpandedEvents";
 
 export default function Events() {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -25,6 +26,10 @@ export default function Events() {
         ],
     };
 
+    if (isExpanded) {
+        return <ExpandedEvents onBack={handleExpandClick} />;
+    }
+
     return (
         <div className="h-screen bg-black relative flex items-center justify-start w-full">
             <div className="w-[200px] flex justify-center">
@@ -41,7 +46,9 @@ export default function Events() {
                     {eventsData.upcoming.map((event, index) => (
                         <div key={index} className="mb-8">
                             <h3 className="text-4xl font-bold mb-2">{event.title}</h3>
-                            <p className="text-gray-light mb-4 text-3xl font-bold">{event.description}</p>
+                            <p className="text-gray-light mb-4 text-3xl font-bold">
+                                {event.description}
+                            </p>
                             <button className="bg-gray-light hover:opacity-80 text-3xl font-bold text-white px-6 py-2 rounded-xl transition-colors">
                                 {event.buttonText}
                             </button>
@@ -54,12 +61,19 @@ export default function Events() {
                     {eventsData.past.map((event, index) => (
                         <div key={index} className="mb-8">
                             <h3 className="text-4xl font-bold mb-2">{event.title}</h3>
-                            <p className="text-gray-light text-3xl font-bold">{event.description}</p>
+                            <p className="text-gray-light text-3xl font-bold">
+                                {event.description}
+                            </p>
                         </div>
                     ))}
                 </div>
             </div>
-            <ExpandIcon position="right" onClick={handleExpandClick} isExpanded={isExpanded} />
+            <ExpandIcon
+                position="right"
+                onClick={handleExpandClick}
+                isExpanded={isExpanded}
+            />
         </div>
     );
 }
+
