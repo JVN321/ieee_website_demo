@@ -11,15 +11,11 @@ export default function Events() {
   };
 
   return (
-    <div className="h-screen bg-blue-500 relative">
+    <div className="h-screen bg-black relative">
       <div className="flex items-center justify-center h-full">
-        <div className="text-center">
-          <h1 className="text-6xl font-bold text-white">EVENTS SECTION</h1>
-          <p className="text-2xl text-white mt-4">Blue Background</p>
-          {isExpanded && (
-            <p className="text-lg text-white mt-2">Expand icon clicked!</p>
-          )}
-        </div>
+        <div className="text-white text-6xl font-bold rotate-270">
+              EVENTS
+            </div>
       </div>
       <ExpandIcon position="right" onClick={handleExpandClick} isExpanded={isExpanded} />
     </div>
