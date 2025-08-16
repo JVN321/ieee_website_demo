@@ -20,12 +20,31 @@ export default function Excom() {
                     </div>
                 </div>
             </div>
-            <div className="text-white  flex flex-col ml-100">
-                <div className="flex items-center gap-8">
-                  <Image src={'icons/user.svg'} alt="User Icon" width="32" height="32" className="text-gray-light" />
-                  <div>
-                    <h1 className="text-7xl font-bold mb-9">AKSHAY SAJEEV</h1>
-                    <p className="text-gray-light text-5xl font-bold">IEEE CHAIR</p>
+            <div className="text-white flex flex-col ml-70 gap-40">
+                <div className="flex">
+                    <Image
+                        src={"icons/user.svg"}
+                        alt="User Icon"
+                        width="130"
+                        height="130"
+                        className="text-gray-light mr-30"
+                    />
+                    <div>
+                        <h1 className="text-7xl font-bold mb-9">AKSHAY SAJEEV</h1>
+                        <p className="text-gray-light text-5xl font-bold">IEEE CHAIR</p>
+                    </div>
+                </div>
+                <div className="flex">
+                    <Image
+                        src={"icons/user.svg"}
+                        alt="User Icon"
+                        width="130"
+                        height="130"
+                        className="text-gray-light mr-30"
+                    />
+                    <div>
+                        <h1 className="text-7xl font-bold mb-9">AKSHAY SAJEEV</h1>
+                        <p className="text-gray-light text-5xl font-bold">IEEE VICE-CHAIR</p>
                     </div>
                 </div>
             </div>

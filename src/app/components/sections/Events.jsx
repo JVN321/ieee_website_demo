@@ -35,7 +35,7 @@ export default function Events() {
                     </div>
                 </div>
             </div>
-            <div className="text-white max-w-lg flex flex-col gap-10 ml-100">
+            <div className="text-white flex flex-col gap-10 ml-100">
                 <div className="mb-16">
                     <h2 className="text-7xl font-bold mb-12">Upcoming</h2>
                     {eventsData.upcoming.map((event, index) => (
