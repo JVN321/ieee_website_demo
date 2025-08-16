@@ -1,0 +1,26 @@
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideDelayed {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animateSlide {
+    transform: translateX(100%);
+    animation: slide 10s linear infinite;
+}
+
+.animateSlideDelayed {
+    animation: slideDelayed 10s linear infinite;
+}
