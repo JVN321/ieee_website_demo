@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${plusJakartaSans.variable} ${inter.variable} antialiased`}>{children}</body>
+      <body className={`${plusJakartaSans.variable} ${inter.variable} font-primary antialiased`}>{children}</body>
     </html>
   );
 }
