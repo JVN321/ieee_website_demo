@@ -8,7 +8,7 @@ function Topbar() {
                 <div className="text-4xl font-bold font-primary text-white">IEEE SB MITS</div>
                 <div className="hidden md:flex space-x-8"></div>
                 <div className="flex items-center font-primary text-white opacity-80 text-4xl ">
-                    menu<Image src="/menu.svg" alt="menu" width={45} height={45} className="" />
+                    menu<Image src="icons/menu.svg" alt="menu" width={45} height={45} className="" />
                 </div>
             </div>
         </nav>

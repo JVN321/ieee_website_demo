@@ -10,7 +10,7 @@ function ExpandIcon({ position = 'left', onClick, isExpanded = false }) {
             } hover:scale-105`}
             onClick={onClick}
         >
-            <Image src={'expand.svg'} alt="Expand Icon" width={100} height={100} />
+            <Image src={'icons/expand.svg'} alt="Expand Icon" width={100} height={100} />
         </div>
     );
 }

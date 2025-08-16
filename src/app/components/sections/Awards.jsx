@@ -11,16 +11,15 @@ export default function Awards() {
   };
 
   return (
-    <div className="h-screen bg-green-500 relative">
-      <div className="flex items-center justify-center h-full">
-        <div className="text-center">
-          <h1 className="text-6xl font-bold text-white">AWARDS SECTION</h1>
-          <p className="text-2xl text-white mt-4">Green Background</p>
-          {isExpanded && (
-            <p className="text-lg text-white mt-2">Expand icon clicked!</p>
-          )}
-        </div>
-      </div>
+    <div className="h-screen bg-black relative flex items-center justify-start w-full">
+            <div className="w-[200px] flex justify-center">
+                <div className="flex -rotate-90  items-center">
+                    <div className="bg-white w-70 h-2 mr-4"></div>
+                    <div className="text-white text-8xl font-bold">
+                        <span className="text-gray-light">AWA</span>RDS
+                    </div>
+                </div>
+            </div>
       <ExpandIcon position="right" onClick={handleExpandClick} isExpanded={isExpanded} />
     </div>
   );
