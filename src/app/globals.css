@@ -22,6 +22,8 @@ html {
   --font-mono: var(--font-geist-mono);
   --font-primary: var(--font-plus-jakarta-sans);
   --font-secondary: var(--font-inter);
+  
+  --color-gray-light: #6c6c6c;
 }
 
 @media (prefers-color-scheme: dark) {
