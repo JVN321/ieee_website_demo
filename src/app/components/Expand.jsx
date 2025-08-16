@@ -5,7 +5,7 @@ function ExpandIcon({ position = 'left', onClick, isExpanded = false }) {
 
     return (
         <div 
-            className={`absolute bottom-32 ${position === 'left' ? 'left-15' : 'right-15'} z-[50] cursor-pointer transition-transform duration-300 ${
+            className={`absolute bottom-10 ${position === 'left' ? 'left-15' : 'right-15'} z-[50] cursor-pointer transition-transform duration-300 ${
                 isExpanded ? 'scale-110' : 'scale-100'
             } hover:scale-110`}
             onClick={onClick}
